@@ -1,0 +1,33 @@
+﻿@page "/signup"
+@model DemoCon.Pages.SignUp.SignUpModel
+@{
+    ViewData["Title"] = "SignUp";
+}
+<link href="@Url.Content("~/Content/site.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/StyleSheet.css")" rel="stylesheet" type="text/css" />
+
+<!------ Include the above in your HEAD tag ---------->
+<h1>Sign Up</h1>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+            <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Sign Up">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#"> Do you wish to sign up for our emailing list? </a>
+        </div>
+        <asp:CheckBox ID="CheckBox1" runat="server" oncheckedchanged="CheckBox1_CheckedChanged" AutoPostBack="true" />
+        <asp:Panel runat="server" ID="panel1"></asp:Panel>
+    </div>
+</div>

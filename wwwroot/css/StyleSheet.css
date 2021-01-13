@@ -1,0 +1,16 @@
+﻿body {
+}
+.container {
+    color: black;
+    font-size: xx-large;
+    align-content: center;
+}
+.leftdiv {
+    color: black;
+    float: left;
+}
+
+.rightdiv {
+    color: black;
+    float: right;
+}
